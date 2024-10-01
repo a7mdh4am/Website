@@ -105,8 +105,8 @@ nav ul li a:hover {
 }
 
 .hero-content .rotating-card {
-  width: 500px;
-  height: 316px;
+  width: 250px;
+  height: 158px;
   perspective: 1000px;
   margin-top: 20px;
 }
