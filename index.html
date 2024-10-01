@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZOSER - Friends ID Cards</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- FontAwesome for Icons -->
+</head>
+<body>
+  <!-- Fixed Navigation Bar -->
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="images/whiteL.png" alt="ZOSER Logo">
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <!-- Social Media Icons -->
+      <div class="social-icons">
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Section: Business Idea with 2D Rotating Card -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="text">
+        <h1>Welcome to ZOSER</h1>
+        <p>Create personalized ID cards for you and your loved ones!</p>
+      </div>
+      <div class="rotating-card">
+        <div class="card">
+          <div class="card-front">
+            <img src="images/5.png" alt="Front of the ID Card">
+          </div>
+          <div class="card-back">
+            <img src="images/7.png" alt="Back of the ID Card">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>ZOSER is a creative platform dedicated to bringing memories to life with custom-made ID cards for friends, couples, and loved ones. We believe in making every moment special through personalized, funky designs that celebrate your unique bond.</p>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <div class="input-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="input-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="input-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
