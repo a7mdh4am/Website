@@ -243,3 +243,171 @@ button:hover {
     margin-top: 20px;
   }
 }
+
+
+
+
+
+
+/* General Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6;
+}
+
+
+/* Login Page */
+.login-container {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #ff6b81;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Story Page */
+.story .container {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.story h1 {
+  color: #ff6b81;
+}
+
+.story form .input-group {
+  margin-bottom: 20px;
+}
+
+.story form .input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.story form .input-group input,
+.story form .input-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.story form .input-group input[type="file"] {
+  padding: 0;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff6b81;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff4c66;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Basic General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+}
+
+.login-container, .signup-container {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #ff6b81;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.input-group input {
+  width: 92%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff6b81;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #ff4c66;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+p a {
+  color: #ff6b81;
+  text-decoration: none;
+}
