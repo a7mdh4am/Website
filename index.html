@@ -3,76 +3,244 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZOSER - Friends ID Cards</title>
+  <title>RAWKODE - Streetwear Revolution</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- FontAwesome for Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Fixed Navigation Bar -->
-  <header>
-    <nav>
-      <div class="logo">
-        <img src="images/whiteL.png" alt="ZOSER Logo">
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-text">RAWKODE</span>
+        <span class="logo-subtitle">STREET</span>
       </div>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-      </ul>
-      <!-- Social Media Icons -->
-      <div class="social-icons">
-        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link">HOME</a>
+        <a href="#collection" class="nav-link">COLLECTION</a>
+        <a href="#about" class="nav-link">ABOUT</a>
+        <a href="#contact" class="nav-link">CONTACT</a>
       </div>
-    </nav>
-  </header>
+      <div class="nav-icons">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-tiktok"></i>
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
 
-  <!-- Main Section: Business Idea with 2D Rotating Card -->
+  <!-- Hero Section -->
   <section class="hero" id="home">
+    <div class="hero-bg-video">
+      <div class="video-overlay"></div>
+    </div>
     <div class="hero-content">
-      <div class="text">
-        <h1>Welcome to ZOSER</h1>
-        <p>Create personalized ID cards for you and your loved ones!</p>
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="title-line-1">STREET</span>
+          <span class="title-line-2">REVOLUTION</span>
+        </h1>
+        <p class="hero-subtitle">RAW • BOLD • UNFILTERED</p>
+        <div class="hero-cta">
+          <button class="cta-primary">SHOP NOW</button>
+          <button class="cta-secondary">WATCH CAMPAIGN</button>
+        </div>
       </div>
-      <div class="rotating-card">
-        <div class="card">
-          <div class="card-front">
-            <img src="images/front.png" alt="Front of the ID Card">
+      <div class="hero-visual">
+        <div class="floating-elements">
+          <div class="element element-1">💀</div>
+          <div class="element element-2">⚡</div>
+          <div class="element element-3">🔥</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>SCROLL TO EXPLORE</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- Featured Collection -->
+  <section class="collection-preview" id="collection">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">LATEST DROP</h2>
+        <p class="section-subtitle">UNDERGROUND COLLECTION 2024</p>
+      </div>
+      <div class="product-grid">
+        <div class="product-card" data-product="1">
+          <div class="product-image">
+            <div class="product-overlay">
+              <button class="quick-view">QUICK VIEW</button>
+            </div>
           </div>
-          <div class="card-back">
-            <img src="images/back.png" alt="Back of the ID Card">
+          <div class="product-info">
+            <h3>URBAN DECAY TEE</h3>
+            <p class="price">$89</p>
+          </div>
+        </div>
+        <div class="product-card" data-product="2">
+          <div class="product-image">
+            <div class="product-overlay">
+              <button class="quick-view">QUICK VIEW</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>CHAOS HOODIE</h3>
+            <p class="price">$129</p>
+          </div>
+        </div>
+        <div class="product-card" data-product="3">
+          <div class="product-image">
+            <div class="product-overlay">
+              <button class="quick-view">QUICK VIEW</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>REBEL CARGO PANTS</h3>
+            <p class="price">$149</p>
+          </div>
+        </div>
+        <div class="product-card" data-product="4">
+          <div class="product-image">
+            <div class="product-overlay">
+              <button class="quick-view">QUICK VIEW</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>ANARCHY CAP</h3>
+            <p class="price">$59</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About Us Section -->
-  <section id="about" class="about">
-    <h2>About Us</h2>
-    <p>ZOSER is a creative platform dedicated to bringing memories to life with custom-made ID cards for friends, couples, and loved ones. We believe in making every moment special through personalized, funky designs that celebrate your unique bond.</p>
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2 class="about-title">WE ARE THE <span class="highlight">REBELLION</span></h2>
+          <p class="about-description">
+            Born from the streets, crafted for the fearless. RAWKODE isn't just clothing—
+            it's a statement. A middle finger to conformity. We design for the misfits, 
+            the rebels, the ones who dare to be different.
+          </p>
+          <p class="about-description">
+            Every piece tells a story of resistance, authenticity, and raw passion. 
+            We don't follow trends—we create them in the underground and watch them 
+            explode into the mainstream.
+          </p>
+          <div class="stats">
+            <div class="stat">
+              <span class="stat-number">10K+</span>
+              <span class="stat-label">REBELS</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">CITIES</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">AUTHENTIC</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="visual-text">
+            <span class="big-text">RAW</span>
+            <span class="small-text">AUTHENTIC STREETWEAR</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Contact Us Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <form id="contactForm">
-      <div class="input-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-info">
+          <h2 class="contact-title">JOIN THE <span class="highlight">MOVEMENT</span></h2>
+          <p class="contact-description">
+            Ready to be part of something bigger? Drop us a line and let's create 
+            some chaos together.
+          </p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>info@rawkode.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+1 (555) RAWKODE</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Underground Studios, NYC</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="YOUR NAME" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="YOUR EMAIL" required>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" placeholder="YOUR MESSAGE" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">SEND MESSAGE</button>
+        </form>
       </div>
-      <div class="input-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Your Email" required>
-      </div>
-      <div class="input-group">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-      </div>
-      <button type="submit">Send Message</button>
-    </form>
+    </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-logo">RAWKODE</span>
+          <p class="footer-tagline">STREET REVOLUTION STARTS HERE</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-section">
+            <h3>SHOP</h3>
+            <a href="#">New Arrivals</a>
+            <a href="#">Hoodies</a>
+            <a href="#">T-Shirts</a>
+            <a href="#">Accessories</a>
+          </div>
+          <div class="footer-section">
+            <h3>SUPPORT</h3>
+            <a href="#">Size Guide</a>
+            <a href="#">Shipping</a>
+            <a href="#">Returns</a>
+            <a href="#">FAQ</a>
+          </div>
+          <div class="footer-section">
+            <h3>CONNECT</h3>
+            <a href="#">Instagram</a>
+            <a href="#">TikTok</a>
+            <a href="#">YouTube</a>
+            <a href="#">Discord</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 RAWKODE. ALL RIGHTS RESERVED. BE DIFFERENT.</p>
+      </div>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
